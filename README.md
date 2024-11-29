@@ -8,3 +8,6 @@ Training classes: ['Early_Renaissance', 'Naive_Art_Primitivism', 'Impressionism'
 
 Testing classes: ['High_Renaissance', 'Rococo', 'Baroque', 'Early_Renaissance', 'Expressionism', 'Romanticism', 'New_Realism', 'Action_painting', 'Pop_Art', 'Naive_Art_Primitivism', 'Symbolism', 'Analytical_Cubism', 'Mannerism_Late_Renaissance', 'Abstract_Expressionism', 'Color_Field_Painting', 'Ukiyo_e', 'Fauvism', 'Contemporary_Realism', 'Minimalism', 'Cubism', 'Art_Nouveau_Modern', 'Pointillism', 'Northern_Renaissance', 'Synthetic_Cubism', 'Realism', 'Impressionism', 'Post_Impressionism']
 
+
+
+Accuracy: 0.17777778208255768
