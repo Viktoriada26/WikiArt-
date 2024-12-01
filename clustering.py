@@ -91,7 +91,7 @@ for cluster, label in zip(clusters, labels):
     clusterlabels[cluster].add(category_name)
 
 
-for cluster, categories in clusterlabels.items():
-    print(f"Cluster {cluster}: {categories}")
+#for cluster, categories in clusterlabels.items():
+    #print(f"Cluster {cluster}: {categories}")
 
 
