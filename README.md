@@ -16,7 +16,7 @@ Testing classes: ['High_Renaissance', 'Rococo', 'Baroque', 'Early_Renaissance', 
 
 
 
-Except for fixing the order of the classes, I also added a dropout=0.5 to prevent overfitting and the final accuracy now is 0.17777778208255768
+Except for fixing the order of the classes, I also added a dropout=0.5 to prevent overfitting and the final accuracy now is 0.19365079700946808
 
 # Part 1 - Fix class imbalance
 
@@ -26,7 +26,7 @@ The data has very unbalanced classes which may lead to problematic performance. 
 
 Upsampling from scikit learn was used (sklearn.utils.resample) in order to resample the sparse samples in a consistent way and deal with class imbalance. 
 So, in the final training dataset after upsampling each class has 2269 samples. 
-After running the upsampled dataset the acuracy is : ........
+After running the upsampled dataset the accuracy is 0.17777778208255768. So, while better accuracy was explected, probably due to the highly imbalanced dataset naive oversampling might mitigate class imbalance effects by simply duplicating minority class examples and lead to overfitting
 
 # Part 2 - Autoencode and cluster representations 
 
