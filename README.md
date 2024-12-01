@@ -19,7 +19,8 @@ Testing classes: ['High_Renaissance', 'Rococo', 'Baroque', 'Early_Renaissance', 
 Except for fixing the order of the classes, I also added a dropout=0.5 to prevent overfitting and the final accuracy now is 0.19365079700946808
 
 # Part 1 - Fix class imbalance
-
+In order to run the upsampled dataset you have to do this change in the train.py  
+traindataset = WikiArtDataset(trainingdir, device, is_train=True, upsample=False) has to be traindataset = WikiArtDataset(trainingdir, device, is_train=True, upsample=True)
 The data has very unbalanced classes which may lead to problematic performance. For example, Impressionism has 2269 samples while Analytical_Cubism has only 15 samples.
 
 ![image](https://github.com/user-attachments/assets/76a80a5e-4157-4eac-a999-8dee2f95e3aa)
@@ -30,7 +31,15 @@ After running the upsampled dataset the accuracy is 0.17777778208255768. So, whi
 
 # Part 2 - Autoencode and cluster representations 
 
-For this part you will need to run encodertraining.py and encodertest.py. 
+For this part you will need to run encodertraining.py and clustering.py. 
+1. In order to create the AutoEncoder I created a new class in wikiart.py which is a nn.Module which includes the encoder and the decoder. The encoder consists of three convolutional layers for feature extraction, every layer is followed by a ReLU and the output is flattened into a 1D vector. The decoder expands the latent representation back to a vector and then there are three deconvolutional layers that reconstruct the image.
+2. For the second part of this task 
+  
+
+
+
+![image](https://github.com/user-attachments/assets/217f79d3-7628-49a3-a8ec-2be67a872442)
+
 
    
 
