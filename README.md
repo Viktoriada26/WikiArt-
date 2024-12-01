@@ -33,8 +33,7 @@ After running the upsampled dataset the accuracy is 0.17777778208255768. So, whi
 
 For this part you will need to run encodertraining.py and clustering.py. 
 1. In order to create the AutoEncoder I created a new class in wikiart.py which is a nn.Module which includes the encoder and the decoder. The encoder consists of three convolutional layers for feature extraction, every layer is followed by a ReLU and the output is flattened into a 1D vector. The decoder expands the latent representation back to a vector and then there are three deconvolutional layers that reconstruct the image.
-2. For the second part of this task 
-  
+2. For the second part of this task, after training the encoder in order to extract the latent feature, I use KMeans in order to cluster the features and TSNE for reducing the dimension to 2D. Finally, it creates a scatter plot where there is different color for each cluster and maps each cluster to the art styles it includes. Below there is the plotting of clusters where we can observe that art styles that share similar features are closer. 
 
 
 
